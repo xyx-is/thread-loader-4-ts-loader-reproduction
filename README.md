@@ -1,5 +1,5 @@
 # thread-loader-4-ts-loader-reproduction
-Using ts-loader 9.4.2 and thread-loader 4.0.1 causes an error.
+Using ts-loader 9.4.2 and thread-loader 4.0.1 causes [an error](https://github.com/webpack-contrib/thread-loader/issues/179).
 This code is a reproduction for this problem. 
 
 ## Usage
