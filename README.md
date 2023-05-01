@@ -7,8 +7,7 @@ Execute `npm run build` or `webpack --mode=development`.
 
 This operation will output an error as follows:
 ```
-process.env.NODE_ENV undefined
-asset main.bundle.js 2.32 KiB [emitted] (name: main)
+asset main.bundle.js 2.32 KiB [compared for emit] (name: main)
 ./src/index.ts 39 bytes [built] [code generated] [1 error]
 
 ERROR in ./src/index.ts
@@ -21,13 +20,12 @@ Cannot read properties of undefined (reading 'plugins')
     at getLoaderOptions (C:\...\thread-loader-4-ts-loader-reproduction\node_modules\ts-loader\dist\index.js:103:21)
     at Object.loader (C:\...\thread-loader-4-ts-loader-reproduction\node_modules\ts-loader\dist\index.js:14:21)
 
-webpack 5.81.0 compiled with 1 error in 256 ms
+webpack 5.81.0 compiled with 1 error in 259 ms
 ```
 
 If you use thread-loader 3.0.4, this operation will succeed as follows:
 ```
-process.env.NODE_ENV undefined
 asset main.bundle.js 1.26 KiB [emitted] (name: main)
 ./src/index.ts 36 bytes [built] [code generated]
-webpack 5.81.0 compiled successfully in 507 ms
+webpack 5.81.0 compiled successfully in 526 ms
 ```
