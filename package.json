@@ -5,7 +5,7 @@
   },
   "private": true,
   "devDependencies": {
-    "thread-loader": "^3.0.4",
+    "thread-loader": "^4.0.1",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
     "webpack": "^5.81.0",
